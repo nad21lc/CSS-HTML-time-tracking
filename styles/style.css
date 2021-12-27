@@ -17,11 +17,11 @@
     --neutral-color-desaturatedBlue: hsl(235, 45%, 61%);
     --neutral-color-paleBlue: hsl(236, 100%, 87%);
     --color-white: white;
-    --Font-size: 18px; /*(card titles e.g. Work, Play)*/
+    --text-size: 16px; /*(card titles e.g. Work, Play)*/
 }
 body {
     font-family: 'Rubik', sans-serif;
-    font-size: var(--font-size-1);
+    font-size: var(--text-size);
     background-color: var(--neutral-color-veryDarkBlue);
     display: flex;
     justify-content: space-between;
@@ -32,8 +32,62 @@ body {
     padding-top: 150px;
     flex-flow: wrap;
 }
+
+h5 {
+    margin: 22px;
+}
+.Principal-card{
+    position: absolute;
+    left:290px;
+    cursor: pointer;
+}
+.card-top{  
+    position: relative;  
+    background-color: var(--primary-color-blue);
+    padding: 25px;
+    color: var(--color-white);
+    height: 300px;
+    text-align: justify;
+    z-index: 1;
+}
+.report-for {
+    color:var(--neutral-color-paleBlue);
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+.user-image {
+    display: flex;     
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: solid 2px var(--color-white);
+}
+.user-name {
+    font-size: 32px;
+}
+.card-bottom {
+    position: relative;    
+    color: var(--neutral-color-paleBlue);
+    background-color: var(--neutral-color-darkBlue);
+    bottom:10px;
+    padding: 29px;    
+}
+.Daily:hover {
+    color:var(--color-white);
+}
+.Weekly {
+    color: var(--color-white);
+    line-height: 3;
+}
+.Weekly:hover {
+    color:var(--color-white);
+}
+.Monthly:hover {
+    color:var(--color-white);
+}
+
 .card{
-    width: 250px;
+    width: 210px;
     border-radius: 10px;
 }
 .work-card {
@@ -58,7 +112,7 @@ body {
     background-color: var(--primary-color-limeGreem-exercise);
     position: relative;
     top:230px;
-    margin-left: -18.5em;
+    margin-left: -11em;
 }
 .social-card{
     background-color: var(--primary-color-violet-social);
@@ -75,41 +129,42 @@ body {
 .card-icon{
     height:45px;
 }
+
 .icon-1 {
     clip-path: inset(12.9% 0 30.4% 0);
     position: relative;
     bottom:10px;
-    padding-left: 155px;
+    padding-left: 120px;
 }
 .icon-2 {
     clip-path: inset(12.9% 0 28.3% 0);
     position: relative;
     bottom:10px;
-    padding-left: 155px;
+    padding-left: 120px;
 }
 .icon-3 {
     clip-path: inset(12.9% 0 30.4% 0);
     position: relative;
     bottom:10px;
-    padding-left: 155px;
+    padding-left: 120px;
 }
 .icon-4 {
     clip-path: inset(2% 0 16.5% 0);
     position: relative;
     bottom:1px;
-    padding-left: 155px;
+    padding-left: 115px;
 }
 .icon-5 {
     clip-path: inset(12.9% 0 42% 0);
     position: relative;
     bottom:13px;
-    padding-left: 164px;
+    padding-left: 128px;
 }
 .icon-6 {
     clip-path: inset(13.3% 0 19.5% 0);
     position: relative;
     bottom:9px;
-    padding-left: 168px;
+    padding-left: 130px;
 }
 .information-card{
     color: var(--color-white);
@@ -119,12 +174,21 @@ body {
     cursor: pointer;
 }
 .information-card:hover{
-    background-color: var(--neutral-color-desaturatedBlue);
+    animation-name: information-background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
-.information-card img{
+
+@keyframes information-background-color{
+    100% {
+        background-color: var(--neutral-color-desaturatedBlue);
+      }
+}
+.icon-option{
     float: right;
     cursor: pointer;
 }
+
 .type-card-name {
     padding-bottom: 12px;
     position: relative;
@@ -137,12 +201,3 @@ body {
 .Lastweek-card{
     color: var(--neutral-color-paleBlue);
 }
-
-
-
-
-
-
-
-
-
