@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./styles/style.css">
-  
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 <body>
-  <section class="work-card">
-      <div class="card-icon">
-        <img src="images/icon-work.svg"/>
+ <section class="container">
+    <div class="work-card card">
+      <div class="card-icon col-xs-12 col-sm-4">
+        <img class="icon-1" src="images/icon-work.svg"/>
       </div>
       <div class="information-card">
         <img src="images/icon-ellipsis.svg"/>
@@ -20,31 +19,62 @@
         <p class="hours-card">32hrs</p>
         <p class="Lastweek-card">Last Week - 36hrs</p>
       </div>
+    </div>
+    <div class="play-card card">
+      <div class="card-icon">
+        <img class="icon-2" src="images/icon-play.svg"/>
+      </div>
+      <div class="information-card">
+        <img src="images/icon-ellipsis.svg"/>
+        <h3 class="type-card-name">Play</h3>
+        <p class="hours-card">10hrs</p>
+        <p class="Lastweek-card">Last Week - 9hrs</p>
+      </div>
+    </div>
+    <div class="study-card card">
+      <div class="card-icon">
+        <img class= "icon-3" src="images/icon-study.svg"/>
+      </div>
+      <div class="information-card card">
+        <img src="images/icon-ellipsis.svg"/>
+        <h3 class="type-card-name">Study</h3>
+        <p class="hours-card">4hrs</p>
+        <p class="Lastweek-card">Last Week - 7hrs</p>
+      </div>
+    </div>
+    <div class="exercise-card card">
+      <div class="card-icon">
+        <img class= "icon-4" src="images/icon-exercise.svg"/>
+      </div>
+      <div class="information-card">
+        <img src="images/icon-ellipsis.svg"/>
+        <h3 class="type-card-name">Exercise</h3>
+        <p class="hours-card">4hrs</p>
+        <p class="Lastweek-card">Last Week - 5hrs</p>
+      </div>
+    </div>
+    <div class="social-card card">
+      <div class="card-icon">
+        <img class= "icon-5" src="images/icon-social.svg"/>
+      </div>
+      <div class="information-card">
+        <img src="images/icon-ellipsis.svg"/>
+        <h3 class="type-card-name">Social</h3>
+        <p class="hours-card">5hrs</p>
+        <p class="Lastweek-card">Last Week - 10hrs</p>
+      </div>
+    </div>
+    <div class="self-care-card card">
+      <div class="card-icon">
+        <img class= "icon-6" src="images/icon-self-care.svg"/>
+      </div>
+      <div class="information-card">
+        <img src="images/icon-ellipsis.svg"/>
+        <h3 class="type-card-name">Self Care</h3>
+        <p class="hours-card">4hrs</p>
+        <p class="Lastweek-card">Last Week - 7hrs</p>
+      </div>
+    </div>
   </section>
-
-  <section class="play-card">
-    <div class="card-icon">
-      <img src="images/icon-play.svg"/>
-    </div>
-    <div class="information-card">
-      <img src="images/icon-ellipsis.svg"/>
-      <h3 class="type-card-name">Play</h3>
-      <p class="hours-card">10hrs</p>
-      <p class="Lastweek-card">Last Week - 9hrs</p>
-    </div>
-  </section>
-
-  <section class="study-card">
-    <div class="card-icon">
-      <img src="images/icon-study.svg"/>
-    </div>
-    <div class="information-card">
-      <img src="images/icon-ellipsis.svg"/>
-      <h3 class="type-card-name">Study</h3>
-      <p class="hours-card">4hrs</p>
-      <p class="Lastweek-card">Last Week - 7hrs</p>
-    </div>
-  </section>
-
 </body>
 </html>
